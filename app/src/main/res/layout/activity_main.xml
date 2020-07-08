@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:background="@android:color/holo_blue_dark"
+        android:fontFamily="serif-monospace"
+
+        android:gravity="center_horizontal"
+        android:text="@string/textView_appname"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:layout_weight="10"
+        android:text="Select type of unit:"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup_units"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:layout_weight="40"
+        android:weightSum="100">
+
+        <RadioButton
+            android:id="@+id/radioButton_length"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:text="Length"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton_mass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:text="Mass"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:text="Area"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton_volume"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:text="Volume"
+            android:textSize="24sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_go"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:layout_margin="16dp"
+        android:onClick="go"
+        android:text="Go" />
+</android.widget.LinearLayout>
